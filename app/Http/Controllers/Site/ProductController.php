@@ -24,7 +24,7 @@ class ProductController extends Controller
     {
         $product = $this->productRepository->findProductBySlug($slug);
         $attributes = $this->attributeRepository->listAttributes();
-//        dd($attributes);
+//        dd($product);
 
         return view('site.pages.product', compact('product', 'attributes'));
     }

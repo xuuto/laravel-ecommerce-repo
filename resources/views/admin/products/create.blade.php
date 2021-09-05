@@ -106,10 +106,14 @@
                                                 class="form-control"
                                                 type="text"
                                                 placeholder="Enter product special price"
-                                                id="special_price"
-                                                name="special_price"
+                                                id="sale_price"
+                                                name="sale_price"
                                                 value="{{ old('special_price') }}"
                                             />
+
+                                            <div class="invalid-feedback active">
+                                                <i class="fa fa-exclamation-circle fa-fw"></i> @error('sale_price') <span>{{ $message }}</span> @enderror
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
